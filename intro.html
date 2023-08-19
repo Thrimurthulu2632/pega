@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+	<link rel="icon" href="img.jpg">
+</head>
+<body>
+	<h1>Javascript introduction</h1>
+	<script>
+		var a = 10;
+		var b = 20;
+		var c = 30;
+		var name = 'pspk';
+		alert(a);
+		console.log(b);
+		document.write("welcome to Javascript");
+		document.write("<br>The a value is ",a);
+
+	</script>
+	<br>
+	<script>
+		var name = 'pspk';
+		document.write(name.length+"<br><br>");
+
+		name += 'msk';
+		document.write(name.length);
+
+	</script>
+	<br>
+	<script>
+		var name = 'ravi';
+		name += ' kishore&mani';
+		document.write(name);
+
+	</script><br>
+	<script>
+		var a =10;
+		document.write(typeof(a)+"<br>");
+		var  a =' sim';
+		document.write(typeof(a));
+
+	</script>
+	<br>
+	<script>
+		var b;
+		b +='nani';
+		document.write(b);
+	</script>
+	<script>
+		var a = 10;
+		var name ='sim';
+		var g = true;
+		document.write(typeof(g),"<br><br>");
+
+	</script>
+	<script>
+		var arr = ['kishore',1,true,];
+		document.write(arr+'<br>');
+	//i want to display kishore
+	    var arr1 = ['kishore','mani','pawan',1,true];
+	    console.log(arr);
+	    document.write(arr1[2],"<br><br>");
+		//object
+		var trainee = {
+			'name' : 'nani',
+			'rollno' : 1234,
+			'college' :'AEC',
+			'branch' :'CSE',
+		}
+		console.log(trainee.branch);
+	    console.log(trainee.college);
+	    console.log(trainee.rollno);
+	    //object
+	    	var obj = [{
+			'name' : 'NANI',
+			'rollno' : 21,
+			'college' :'AEC',
+			'branch' :'CSE',
+		},
+		{
+			'name' : 'CHINNI',
+			'rollno' : 4586,
+			'college' :'AEC',
+			'branch' :'ECE',
+		},
+		{
+			'name' : 'mani',
+			'rollno' : 4586,
+			'college' :'AEC',
+			'branch' :'ECE',
+		}]
+		for (var i =0; i< obj.length;i++){
+			for( key in obj[i])
+			{
+				document.write(obj[i][key])
+			}
+			document.write("<br>");
+		}
+
+	      /*  var trainee2 = [{
+			'name' : 'NANI',
+			'rollno' : 21,
+			'college' :'AEC',
+			'branch' :'CSE',
+		},
+		{
+			'name' : 'CHINNI',
+			'rollno' : 4586,
+			'college' :'AEC',
+			'branch' :'ECE',
+		},
+		{
+			'name' : 'mani',
+			'rollno' : 4586,
+			'college' :'AEC',
+			'branch' :'ECE',
+		}];
+		for (var i =0; i< trainee1.length;i++){
+			console.log(i+1,trainee1[i].name,trainee1[i].rollno,trainee1[i].college,trainee1[i].branch);
+			document.write(i+1,trainee1[i].name,'<br>',trainee1[i].rollno,'<br>',trainee1[i].college,'<br>',trainee1[i].branch);
+			document.write("<br>")
+		}
+	
+
+	</script>
+	<script type="text/javascript" src="external.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>-->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BOOTSTRAP</p>
+	<p class="topic">JS</p>
+    <p class="topic">HTML</p>
+    <script type="text/javascript">
+    	let  p = document.getElementsByClassName('topic');
+    	p[0].innerHTML ='hyper text markup language';
+    </script>
+    <ol>
+    	<li>AEC</li>
+    	<li>ACET</li>
+    	<li>ACOE</li>
+
+    </ul>
+    <script type="text/javascript">
+    	let lis = document.getElementsByTagName('li');
+    	console.log(lis)
+    	lis[0].innerText = 'Aditya Engineering College';
+    </script>
+    <table border="2px">
+    	<tr>
+    		<td>&nbsp</td>
+    		<td>&nbsp</td>
+    		<td>&nbsp</td>
+    	</tr>
+    	<tr>
+    		<td>&nbsp</td>
+    		<td>&nbsp</td>
+    		<td>&nbsp</td>
+    	</tr>
+    	<tr>
+    		<td>&nbsp</td>
+    		<td>&nbsp</td>
+    		<td>&nbsp</td>
+    	</tr>
+    </table>
+    <script type="text/javascript">
+     	let tab = document.getElementsByTagName('td');
+     	for (var i = 0; i<tab.length; i++) {
+     		tab[i].innerHTML = 9-i
+     	}
+
+    	
+    </script>
+
+
+</body>
+</html>
